@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  front:
+    container_name: front
+    build: .
+    ports:
+     - "3000:3000"
+    volumes:
+     - ./src:/docker-react/src
+     - ./public:/docker-react/public
